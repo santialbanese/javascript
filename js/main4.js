@@ -165,9 +165,13 @@ class Bombon{
   function realizarCompra(){
     const comprar = document.getElementById("botonCompra");
     const section = document.getElementById("idSection");
+
+
     carritoContenido.append(section);
+    
     comprar.addEventListener("click", () => {
       section.style.display = 'block';
+      comprar.style.display = 'none';
     })
   }
   renderizarProductos(bombones);
