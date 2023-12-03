@@ -1,0 +1,128 @@
+[
+    [{
+      "tipo": "Arlequin",
+      "opciones": "Dulce de Leche",
+      "precio": 3800,
+      "imagenes": "multimedia/arlequinDLL.jpg",
+      "descripcion": "Chocolate con leche y blanco relleno con dulce de leche."
+    },
+    {
+      "tipo": "Arlequin",
+      "opciones": "Rocher",
+      "precio": 3900,
+      "imagenes": "multimedia/arlequinrocher.jpg",
+      "descripcion": "Chocolate con leche y semiamargo relleno con crema de avellanas y cacao."
+    },
+    {
+      "tipo": "Arlequin",
+      "opciones": "Rojo",
+      "precio": 3700,
+      "imagenes": "multimedia/arlequinrojo.jpg",
+      "descripcion": "Chocolate con leche relleno de dulce de leche."
+    },
+    {
+      "tipo": "Arlequin",
+      "opciones": "Violeta",
+      "precio": 3700,
+      "imagenes": "multimedia/arlequinvioleta.jpg",
+      "descripcion": "Chocolate blanco relleno de crema oreo."
+    },
+    {
+      "tipo": "Bloquecitos",
+      "opciones": "Amor leche",
+      "precio": 4200,
+      "imagenes": "multimedia/bloquecito-amor-leche.jpg",
+      "descripcion": "Chocolate macizo leche y blanco."
+    },
+    {
+      "tipo": "Bloquecitos",
+      "opciones": "Amor blanco",
+      "precio": 4400,
+      "imagenes": "multimedia/bloquecito-amor-blanco.jpg",
+      "descripcion": "Chocolate macizo blanco y semiamargo."
+    },
+    {
+      "tipo": "Corazones",
+      "opciones": "Impreso semiamargo",
+      "precio": 4000,
+      "imagenes": "multimedia/corazón-semiamargo.jpg",
+      "descripcion": "Chocolate semiamargo relleno con dulce de leche."
+    },
+    {
+      "tipo": "Corazones",
+      "opciones": "Impreso leche",
+      "precio": 3900,
+      "imagenes": "multimedia/corazon-impreso-leche.jpg",
+      "descripcion": "Chocolate con leche relleno con dulce de leche."
+    },
+    {
+      "tipo": "Corazones",
+      "opciones": "Impreso rojo",
+      "precio": 3800,
+      "imagenes": "multimedia/corazon-impreso-rojo.jpg",
+      "descripcion": "Chocolate blanco coloreado relleno con dulce de leche."
+    },
+    {
+      "tipo": "Licor",
+      "opciones": "Rhum",
+      "precio": 3900,
+      "imagenes": "multimedia/rhum.jpg",
+      "descripcion": "Chocolate semiamargo relleno de licor rhum."
+    },
+    {
+      "tipo": "Licor",
+      "opciones": "Cognac",
+      "precio": 3900,
+      "imagenes": "multimedia/cognac.jpg",
+      "descripcion": "Chocolate semiamargo relleno de licor cognac."
+    },
+    {
+      "tipo": "Licor",
+      "opciones": "Whisky",
+      "precio": 3900,
+      "imagenes": "multimedia/Whisky.jpg",
+      "descripcion": "Chocolate semiamargo relleno de licor de whisky."
+    },
+    {
+      "tipo": "Licor",
+      "opciones": "Cereza",
+      "precio": 3900,
+      "imagenes": "multimedia/Cereza.jpg",
+      "descripcion": "Chocolate semiamargo relleno de licor de cereza."
+    },
+    {
+      "tipo": "Macizos",
+      "opciones": "Flor blanca",
+      "precio": 3850,
+      "imagenes": "multimedia/flor blanca.jpg",
+      "descripcion": "Flor de chocolate blanco."
+    },
+    {
+      "tipo": "Macizos",
+      "opciones": "Flor leche",
+      "precio": 3950,
+      "imagenes": "multimedia/flor leche.jpg",
+      "descripcion": "Flor de chocolate con leche."
+    },
+    {
+      "tipo": "Macizos",
+      "opciones": "Flor semiamarga",
+      "precio": 4150,
+      "imagenes": "multimedia/flor semi.jpg",
+      "descripcion": "Flor de chocolate semiamargo."
+    },
+    {
+      "tipo": "Macizos",
+      "opciones": "Hojita de menta",
+      "precio": 4350,
+      "imagenes": "multimedia/hojita de menta.jpg",
+      "descripcion": "Chocolate semiamargo con sabor a menta."
+    },
+    {
+      "tipo": "Macizos",
+      "opciones": "Gajito",
+      "precio": 3900,
+      "imagenes": "multimedia/gajito.jpg",
+      "descripcion": "Chocolate semiamargo con sabor a naranja"
+    }]
+  ]

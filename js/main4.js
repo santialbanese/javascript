@@ -7,33 +7,27 @@ class Bombon{
     this.descripcion = descripcion;
     }
 }
-  const bombones = [
-    new Bombon("Arlequin", "Dulce de Leche", 3800, "multimedia/arlequinDLL.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Arlequin", "Rocher", 3900, "multimedia/arlequinrocher.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Arlequin",  "Rojo", 3700, "multimedia/arlequinrojo.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Arlequin",  "Violeta", 3700, "multimedia/arlequinvioleta.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-
-    new Bombon("Bloquecitos", "Amor leche", 4200, "multimedia/bloquecito-amor-leche.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Bloquecitos", "Amor blanco", 4400, "multimedia/bloquecito-amor-blanco.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-
-    new Bombon("Corazones", "Impreso semiamargo", 4000, "multimedia/corazón-semiamargo.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Corazones", "Impreso leche", 3900, "multimedia/corazon-impreso-leche.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Corazones", "Impreso rojo", 3800, "multimedia/corazon-impreso-rojo.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-
-    new Bombon("Licor", "Rhum", 3900, "multimedia/rhum.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Licor", "Cognac", 3900, "multimedia/cognac.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Licor", "Whisky", 3900, "multimedia/Whisky.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Licor", "Cereza", 3900, "multimedia/Cereza.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-
-    new Bombon("Macizos", "Flor blanca", 3850, "multimedia/flor blanca.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Macizos", "Flor leche", 3950, "multimedia/flor leche.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Macizos", "Flor semiamarga", 4150, "multimedia/flor semi.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Macizos", "Hojita de menta", 4350, "multimedia/hojita de menta.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-    new Bombon("Macizos", "Gajito", 3900, "multimedia/gajito.jpg", "Chocolate con leche y blanco relleno con dulce de leche."),
-
-  ];
-
+  const bombones = [];
   let carrito = [];
+
+  function obtenerBombonesJSON() {
+    return new Promise((resolve, reject) => {
+      fetch('./productos.json').then((response) => {
+        return response.json();
+      }).then((responseJson) => {
+        for (const filaBombon of responseJson) {
+          for (const unBombon of filaBombon) {
+            
+            const { tipo, opciones, precio, imagenes, descripcion } = unBombon;
+            bombones.push(new Bombon(tipo, opciones, precio, imagenes, descripcion));
+          }
+        }
+  
+        resolve();
+      });
+    });
+  }
+
 
   function renderizarProductos(bombones) {
     const contenedor = document.getElementById("contenedor");
@@ -68,7 +62,7 @@ class Bombon{
         const a = document.createElement("a");
         a.id = `descripcion-${bombon.tipo}`;
         a.className = "claseA";
-        a.innerHTML = "Leer descripción";
+        a.innerHTML = "Leer descripción...";
 
         const a2 = document.createElement("a");
         a2.id = `descripcion-${bombon.tipo}`;
@@ -112,11 +106,15 @@ class Bombon{
           carrito.push(nuevoBombon);
           guardarCarritoEnLocalStorage();
           actualizarModalCarrito();
-          realizarCompra()
+          realizarCompra();
+
+          contadorCarrito++;
+        actualizarContadorCarrito();
         });
 
     }
   }
+
 
   function guardarCarritoEnLocalStorage(){
     localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -130,14 +128,17 @@ class Bombon{
     }
   }
 
-  let TOTAL = 0;
   function actualizarModalCarrito(){
-    const carritoContenido = document.getElementById("carritoContenido");
+    carritoContenido = document.getElementById("carritoContenido");
+    const totalElement = document.getElementById("total");
     carritoContenido.innerHTML = "";
+    let total = 0;
+
+    
 
     carrito.forEach(producto => {
       const X = document.createElement("button");
-      X.innerHTML = "BORRAR";
+      X.innerHTML = "❌";
 
       const productoDiv = document.createElement("div");
       productoDiv.className = "claseProductos";
@@ -147,32 +148,79 @@ class Bombon{
               <p><img src="${producto.imagenes}" alt="${producto.tipo}" style="max-width: 100px;"></p>
               <p><strong>Precio:</strong> $${producto.precio}</p>
           </div>`;
-      TOTAL += producto.precio;
+      total += producto.precio;
       carritoContenido.append(X, productoDiv);
 
       X.addEventListener("click", () => {
         carritoContenido.removeChild(productoDiv);
         carritoContenido.removeChild(X);
-        TOTAL -= producto.precio;
+        total -= producto.precio;
+        totalElement.textContent = `Total: $${total.toFixed(2)}`;
         carrito = carrito.filter(item => item !== producto);
         guardarCarritoEnLocalStorage();
-
+        if(contadorCarrito - 1 >= 0 ){
+          contadorCarrito--;
+          actualizarContadorCarrito();
+        }
+        if(contadorCarrito == 0){
+          Toastify({
+            text: "Carrito vacío!",
+            className: "info",
+            style: {
+              background: "linear-gradient(to right, #FF6347, #FF4500)", 
+            }
+          }).showToast();
+        }
+          
+        if (carrito.length > 0) {
+          comprar.style.display = 'block';
+      } else {
+          comprar.style.display = 'none';
+      }
       })
   });
-
+    totalElement.textContent = `Total: $${total.toFixed(2)}`;
   }
 
-  function realizarCompra(){
+  function actualizarContadorCarrito() {
+    const contadorCarritoElement = document.getElementById("contadorCarrito");
+    if (contadorCarritoElement) {
+        contadorCarritoElement.textContent = contadorCarrito.toString();
+    }
+}
+
+  function realizarCompra() {
     const comprar = document.getElementById("botonCompra");
-    const section = document.getElementById("idSection");
 
-
-    carritoContenido.append(section);
-    
     comprar.addEventListener("click", () => {
+        
+    const section = document.getElementById("idSection");
+   
+    if (section) {
+      carritoContenido.append(section);
       section.style.display = 'block';
       comprar.style.display = 'none';
+    } 
+    
+    const enviarFormulario = document.getElementById("enviar");
+
+    enviarFormulario.addEventListener("click", () => {
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "La compra fue realizada con éxito!",
+        showConfirmButton: false,
+        timer: 1500
+      });
     })
-  }
-  renderizarProductos(bombones);
-  cargarCarritoDesdeLocalStorage();
+
+
+    });
+}
+
+  let carritoContenido;
+  let contadorCarrito = 0;
+  obtenerBombonesJSON().then( () => {
+    renderizarProductos(bombones);
+    cargarCarritoDesdeLocalStorage();
+  })

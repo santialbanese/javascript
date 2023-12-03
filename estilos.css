@@ -41,11 +41,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
 .card{
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
 }
 .claseProductos{
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
 }
 .total{
     font-weight: 800;
@@ -64,5 +64,29 @@
 }
 .margin-cont{
     margin-bottom: 20px;
-    color: white;
+    color: whitesmoke;
+}
+#total{
+    border-radius: 8px;
+    padding: 6px;
+    color: red;
+    margin-right: auto;
+}
+#verCarrito {
+    position: relative;
+    font-size: 24px;
+}
+
+#contadorCarrito {
+    position: absolute;
+    top: 22px;
+    right: -8px;
+    background-color: #ff4500; 
+    color: whitesmoke; 
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+#bg-body{
+    background-color: #CEAB98;
 }
