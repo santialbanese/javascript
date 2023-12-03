@@ -123,6 +123,244 @@
       "opciones": "Gajito",
       "precio": 3900,
       "imagenes": "multimedia/gajito.jpg",
-      "descripcion": "Chocolate semiamargo con sabor a naranja"
+      "descripcion": "Chocolate semiamargo con sabor a naranja."
+    },
+    {
+      "tipo": "Suizos con relleno frutal ",
+      "opciones": "Copito lemon",
+      "precio": 4000,
+      "imagenes": "../multimedia/copito lemon.jpg",
+      "descripcion": "Chocolate blanco relleno con crema de limón y jengibre."
+    },
+    {
+      "tipo": "Suizos con relleno frutal ",
+      "opciones": "Fresita",
+      "precio": 4000,
+      "imagenes": "../multimedia/fresita.jpg",
+      "descripcion": "Chocolate blanco relleno con crema de frutillas."
+    },
+    {
+      "tipo": "Suizos con relleno frutal ",
+      "opciones": "Ananá",
+      "precio": 4000,
+      "imagenes": "../multimedia/ananá.jpg",
+      "descripcion": "Chocolate semiamargo relleno con crema de limón y jengibre."
+    },
+    {
+      "tipo": "Suizos con relleno frutal ",
+      "opciones": "Banana split",
+      "precio": 4000,
+      "imagenes": "../multimedia/2bananasplit.jpg",
+      "descripcion": "Chocolate semiamargo relleno de dulce de leche con banana."
+    },
+    {
+      "tipo": "Suizos con relleno frutal ",
+      "opciones": "Orange",
+      "precio": 4000,
+      "imagenes": "../multimedia/orange.jpg",
+      "descripcion": "Chocolate semiamargo relleno con crema de naranjas."
+    },
+    {
+      "tipo": "Suizos con relleno frutal ",
+      "opciones": "Maracuyá",
+      "precio": 4000,
+      "imagenes": "../multimedia/maracuyá.jpg",
+      "descripcion": "Chocolate leche relleno con crema de maracuyá."
+    },
+    {
+      "tipo": "Suizos con relleno frutal ",
+      "opciones": "Frutos del bosque",
+      "precio": 4000,
+      "imagenes": "../multimedia/frutos-del-bosque.jpg",
+      "descripcion": "Chocolate leche relleno de crema con frutos del bosque."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Ardillita leche",
+      "precio": 4000,
+      "imagenes": "../multimedia/ardilla-leche.jpg",
+      "descripcion": "Chocolate con leche relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Ardillita blanca",
+      "precio": 4000,
+      "imagenes": "../multimedia/ardilla-blanca.jpg",
+      "descripcion": "Chocolate blanco relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Clementino leche",
+      "precio": 4000,
+      "imagenes": "../multimedia/clementino-leche.jpg",
+      "descripcion": "Chocolate con leche relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Clementino blanco",
+      "precio": 4000,
+      "imagenes": "../multimedia/clementino-blanco.jpg",
+      "descripcion": "Chocolate blanco relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Pescadito leche",
+      "precio": 4000,
+      "imagenes": "../multimedia/pescadito-leche.jpg",
+      "descripcion": "Chocolate con leche relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Pescadito blanco",
+      "precio": 4000,
+      "imagenes": "../multimedia/pescadito-blanco.jpg",
+      "descripcion": "Chocolate blanco relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Corazón leche",
+      "precio": 4000,
+      "imagenes": "../multimedia/corazon-leche.jpg",
+      "descripcion": "Chocolate con leche relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Trufa marmolada",
+      "precio": 4000,
+      "imagenes": "../multimedia/marmolado.jpg",
+      "descripcion": "Chocolate con leche veteado con chocolate blanco relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con dulce de leche",
+      "opciones": "Animalitos surtidos",
+      "precio": 4000,
+      "imagenes": "../multimedia/animalitos_surt.jpg",
+      "descripcion": "Chocolate con leche relleno con dulce de leche."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Nougat",
+      "precio": 4000,
+      "imagenes": "../multimedia/nougat.jpg",
+      "descripcion": "Chocolate con leche relleno de praliné de avellanas."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Hoja de menta",
+      "precio": 4000,
+      "imagenes": "../multimedia/3hojitamenta.jpg",
+      "descripcion": "Chocolate semiamargo relleno de crema de menta."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Nuez y dulce",
+      "precio": 4000,
+      "imagenes": "../multimedia/nuez-y-dulce.jpg",
+      "descripcion": "Chocolate con leche relleno de dulce de leche con nuez."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Marroc",
+      "precio": 4000,
+      "imagenes": "../multimedia/marroc.jpg",
+      "descripcion": "Chocolate semiamargo relleno de praliné de maní."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Copito rhum",
+      "precio": 4000,
+      "imagenes": "../multimedia/4copitorhum.jpg",
+      "descripcion": "Chocolate con leche relleno con dulce de leche con rhum."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Coco y dulce",
+      "precio": 4000,
+      "imagenes": "../multimedia/coco-y-dulce.jpg",
+      "descripcion": "Chocolate con leche relleno de dulce de leche y coco."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Café",
+      "precio": 4000,
+      "imagenes": "../multimedia/café.jpg",
+      "descripcion": "Chocolate semiamargo relleno con mousse de café."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Hojita de tiramisú",
+      "precio": 4000,
+      "imagenes": "../multimedia/hojita-de-tiramisú.jpg",
+      "descripcion": "Chocolate con leche relleno con crema sabor tiramisú."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Praliné",
+      "precio": 4000,
+      "imagenes": "../multimedia/praliné.jpg",
+      "descripcion": "Chocolate con leche relleno de praliné de almendras."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Crema cognac",
+      "precio": 4000,
+      "imagenes": "../multimedia/crema-cognac.jpg",
+      "descripcion": "Chocolate con leche relleno con crema de cognac."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Copito rhum",
+      "precio": 4000,
+      "imagenes": "../multimedia/nuez.jpg",
+      "descripcion": "Chocolate blanco relleno con praliné de nuez."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Trufa blanca",
+      "precio": 4000,
+      "imagenes": "../multimedia/coco-y-dulce.jpg",
+      "descripcion": "Chocolate blanco con relleno de ganache al licor."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Piña colada",
+      "precio": 4000,
+      "imagenes": "../multimedia/1piñacolada.jpg",
+      "descripcion": "Chocolate semiamargo relleno de crema sabor piña colada."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Pistaccio",
+      "precio": 4000,
+      "imagenes": "../multimedia/pistaccio.jpg",
+      "descripcion": "Chocolate con leche relleno de praliné de pistachos."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Crema maría",
+      "precio": 4000,
+      "imagenes": "../multimedia/crema-maría.jpg",
+      "descripcion": "Chocolate con leche relleno de crema de licor de café."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Capuccino",
+      "precio": 4000,
+      "imagenes": "../multimedia/capuccino.jpg",
+      "descripcion": "Chocolate con leche relleno de mousse de café."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Trufa leche",
+      "precio": 4000,
+      "imagenes": "../multimedia/trufa leche.jpg",
+      "descripcion": "Chocolate con leche con relleno de ganache al licor."
+    },
+    {
+      "tipo": "Suizos rellenos con distintas variedades de sabores",
+      "opciones": "Trufa rhum",
+      "precio": 4000,
+      "imagenes": "../multimedia/trufa rhum.jpg",
+      "descripcion": "Chocolate semiamargo con relleno de ganache al rhum."
     }]
   ]

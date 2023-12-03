@@ -162,14 +162,14 @@ class Bombon{
           contadorCarrito--;
           actualizarContadorCarrito();
         }
-        if(contadorCarrito == 0){
+        if(contadorCarrito === 0){
           Toastify({
             text: "Carrito vacío!",
             className: "info",
             style: {
               background: "linear-gradient(to right, #FF6347, #FF4500)", 
             }
-          }).showToast();
+          }).showToast();        
         }
           
         if (carrito.length > 0) {
@@ -202,7 +202,7 @@ class Bombon{
       comprar.style.display = 'none';
     } 
     
-    const enviarFormulario = document.getElementById("enviar");
+    const enviarFormulario = document.getElementById("enviar").value = "Comprar";
 
     enviarFormulario.addEventListener("click", () => {
       Swal.fire({
@@ -212,6 +212,12 @@ class Bombon{
         showConfirmButton: false,
         timer: 1500
       });
+
+      carrito = [];
+      contadorCarrito = 0;
+      guardarCarritoEnLocalStorage();
+      actualizarModalCarrito();
+      actualizarContadorCarrito();
     })
 
 
